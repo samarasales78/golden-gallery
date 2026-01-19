@@ -1,0 +1,141 @@
+/* VARIÁVEIS DE COR */
+:root {
+  --preto: #000000;
+  --dourado: #d4af37;
+  --dourado-claro: #f2d675;
+  --vermelho: #7a1f1f;
+  --cinza: #b5b5b5;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--preto);
+  padding: 2rem;
+}
+
+/* RETÂNGULO DOURADO */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 720px;   /* largura do retângulo */
+
+  padding: 3rem 4rem; /* altura controlada */
+  gap: 2.5rem;
+
+  background-color: var(--preto);
+  border: 1.5px solid var(--dourado);
+  border-radius: 10px;
+}
+
+/* COLUNAS */
+.hero-content,
+.hero-image {
+  flex: 1;
+}
+
+/* TEXTO */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 4vw, 2.6rem);
+  color: var(--dourado);
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.1;
+  white-space: nowrap; /* mantém em uma linha */
+}
+
+.hero-top { /* visual diary */
+  font-size: 0.60rem;     
+  letter-spacing: 0.18rem;
+  color: var(--dourado);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.hero-subtitle { /* sketches */
+  align-self: flex-end;
+  margin-top: 0.6rem;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.18rem;
+  color: var(--dourado);
+  position: relative;
+}
+
+.hero-subtitle::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 1px;
+  margin-top: 0.3rem;
+  margin-left: auto;
+  background: var(--dourado);
+}
+
+/* BOTÃO */
+.hero-button {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid var(--dourado);
+  color: var(--dourado);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--dourado);
+  color: var(--preto);
+}
+
+/* IMAGEM */
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: clamp(120px, 30vw, 300px);
+  height: auto;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: min(92vw, 720px); 
+  height: auto;
+
+  padding: 1rem clamp(1.2rem, 3vw, 2rem);
+  gap: 1.2rem;
+
+  background-color: var(--preto);
+  border: 1.5px solid var(--dourado);
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.hero-content,
+.hero-image {
+  flex: 0 0 auto;  /* impede flex “adaptativo” */
+}
