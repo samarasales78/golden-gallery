@@ -7,11 +7,17 @@
   --cinza: #b5b5b5;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--preto);
+}
+
 /* HERO SECTION */
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background-color: var(--preto);
   padding: 2rem;
@@ -26,7 +32,7 @@
   width: 100%;
   max-width: 720px;   /* largura do retângulo */
 
-  padding: 3rem 4rem; /* altura controlada */
+  padding: 3rem 4rem;
   gap: 2.5rem;
 
   background-color: var(--preto);
@@ -137,5 +143,35 @@
 
 .hero-content,
 .hero-image {
-  flex: 0 0 auto;  /* impede flex “adaptativo” */
+  flex: 0 0 auto;
 }
+
+/* TÍTULO EXPLORE POR CATEGORIAS */
+.explore-categories {
+  position: relative;
+  z-index: 3;
+
+  max-width: 1200px;
+  margin: -200px auto 40px;
+  padding-inline: clamp(16px, 4vw, 48px);
+}
+
+.explore-top {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.18rem;
+  color: var(--dourado);
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.explore-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 500;
+  color: var(--dourado);
+  margin: 0;
+  line-height: 1.1;
+  position: relative;
+}
+
