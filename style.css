@@ -249,6 +249,113 @@ html, body {
   transition: transform 0.6s ease; 
 } 
 
+.cover-card .drawing-info {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* TÍTULO */
+.cover-card .drawing-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* REMOVE DESCRIÇÃO */
+.cover-card .drawing-info p {
+  display: none;
+}
+
+.cover-card:hover .drawing-info {
+  opacity: 1;
+}
+
+.cover-card:hover .drawing-image {
+  transform: scale(1.05);
+}
+
+/* LINHAS E COLUNAS */
+.drawings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* CARD */
+.drawing-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.drawing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* IMAGEM */
+.drawing-image {
+  background: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.drawing-card .drawing-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-card .drawing-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* TEXTO */
+.drawing-info {
+  padding: 16px;
+}
+
+.drawing-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.drawing-info p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ADAPTAÇÃO MOBILE */ 
 @media (max-width: 768px) { 
   .explore-categories { 
