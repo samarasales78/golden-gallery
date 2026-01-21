@@ -175,3 +175,79 @@ html, body {
   position: relative;
 }
 
+.explore-title::after { 
+  content: ""; 
+  display: block; 
+  width: 70px; 
+  height: 1px; 
+  margin-top: 10px; 
+  background-color: var(--dourado); 
+} 
+
+/* CATEGORIAS */ 
+.category-covers { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 24px; 
+  margin-top: 70px; 
+  margin-bottom: 50px; 
+  padding-inline: clamp(16px, 4vw, 48px); 
+} 
+
+/* CARD QUADRADO */ 
+.cover-card { 
+  aspect-ratio: 1 / 1;  
+  background: #1a1a1a; 
+  border-radius: 18px; 
+  overflow: hidden; 
+  cursor: pointer; 
+  transition: transform 0.35s, box-shadow 0.35s; 
+  display: flex; 
+  flex-direction: column; 
+} 
+ 
+.cover-card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6); 
+} 
+
+/* imagem ocupa o topo */ 
+.cover-card .drawing-image { 
+  flex: 1; 
+  background: #2b2b2b; 
+} 
+
+/* texto centralizado */ 
+.cover-card .drawing-info { 
+  padding: 12px; 
+  text-align: center; 
+} 
+
+.cover-card .drawing-info h3 { 
+  font-size: 1.05rem; 
+} 
+
+.cover-card .drawing-info p { 
+  font-size: 0.8rem; 
+  color: #aaa; 
+} 
+
+/* CATEGORIAS ESCONDIDAS */ 
+.category { 
+  display: none; 
+} 
+
+.category.active { 
+  display: block; 
+} 
+
+.cover-card { 
+  position: relative; 
+} 
+
+/* imagem */ 
+.cover-card .drawing-image { 
+  background-size: cover; 
+  background-position: center; 
+  transition: transform 0.6s ease; 
+} 
