@@ -194,7 +194,6 @@ html, body {
   padding-inline: clamp(16px, 4vw, 48px); 
 } 
 
-/* CARD QUADRADO */ 
 .cover-card { 
   aspect-ratio: 1 / 1;  
   background: #1a1a1a; 
@@ -210,8 +209,7 @@ html, body {
   transform: translateY(-6px); 
   box-shadow: 0 12px 28px rgba(0,0,0,0.6); 
 } 
-
-/* imagem ocupa o topo */ 
+ 
 .cover-card .drawing-image { 
   flex: 1; 
   background: #2b2b2b; 
@@ -232,7 +230,6 @@ html, body {
   color: #aaa; 
 } 
 
-/* CATEGORIAS ESCONDIDAS */ 
 .category { 
   display: none; 
 } 
@@ -251,3 +248,20 @@ html, body {
   background-position: center; 
   transition: transform 0.6s ease; 
 } 
+
+/* ADAPTAÇÃO MOBILE */ 
+@media (max-width: 768px) { 
+  .explore-categories { 
+    margin-top: -520px;  
+  } 
+
+  .category-covers { 
+    margin-top: 24px;  
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 18px; 
+  } 
+
+  .cover-card { 
+    position: relative; 
+  } 
+}
