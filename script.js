@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   const covers = document.querySelectorAll('.cover-card');
   const modal = document.getElementById('galleryModal');
   const closeBtn = document.getElementById('closeModal');
-
-  // pega SOMENTE as categorias dentro do modal
   const categories = modal.querySelectorAll('.category');
 
   covers.forEach(cover => {
