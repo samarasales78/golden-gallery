@@ -192,7 +192,7 @@ body {
   justify-content: flex-start;
   gap: 2.5rem;
   position: relative;
-  padding-left: 10rem;
+  padding-left: 4rem;
 }
 
 .filters select {

@@ -90,6 +90,30 @@ const drawings = [
     year: "2025"
   },
   {
+    title: "Goku e Gohan fanart",
+    image: "img/gokuegohan.jpeg",
+    category: "anime",
+    year: "2024"
+  },
+  {
+    title: "Akaza fanart",
+    image: "img/akaza.jpeg",
+    category: "anime",
+    year: "2025"
+  },
+  {
+    title: "Taehyung",
+    image: "img/tae.jpeg",
+    category: "realismo",
+    year: "2024"
+  },
+  {
+    title: "Mulher Maravilha",
+    image: "img/mulhermaravilha.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
     title: "Farol",
     image: "img/farol.jpeg",
     category: "arquitetura",
@@ -102,21 +126,9 @@ const drawings = [
     year: "2025"
   },
   {
-    title: "Goku e Gohan fanart",
-    image: "img/gokuegohan.jpeg",
-    category: "anime",
-    year: "2024"
-  },
-  {
-    title: "Mini Goku fanart",
-    image: "img/minigoku.jpeg",
-    category: "anime",
-    year: "2024"
-  },
-  {
-    title: "Akaza fanart",
-    image: "img/akaza.jpeg",
-    category: "anime",
+    title: "Red Hot Chilli Cat",
+    image: "img/redhotcat.jpeg",
+    category: "ilustracao",
     year: "2025"
   },
   {
@@ -150,9 +162,9 @@ const drawings = [
     year: "2024"
   },
   {
-    title: "Red Hot Chilli Cat",
-    image: "img/redhotcat.jpeg",
-    category: "ilustracao",
+    title: "Jesus",
+    image: "img/jesus.jpeg",
+    category: "realismo",
     year: "2025"
   },
   {
@@ -162,22 +174,28 @@ const drawings = [
     year: "2024"
   },
   {
-    title: "Jesus",
-    image: "img/jesus.jpeg",
+    title: "Mini Goku fanart",
+    image: "img/minigoku.jpeg",
+    category: "anime",
+    year: "2024"
+  },
+  {
+    title: "Tony Stark",
+    image: "img/ironman.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "Jisoo (BLACKPINK)",
+    image: "img/jisoo.jpeg",
     category: "realismo",
-    year: "2025"
+    year: "2022"
   },
   {
     title: "Hinata Naruto fanart",
     image: "img/hinatanaruto.jpeg",
     category: "anime",
     year: "2023"
-  },
-  {
-    title: "Tinker Bell",
-    image: "img/tinker.jpeg",
-    category: "ilustracao",
-    year: "2026"
   },
   {
     title: "Hinata fanart",
@@ -192,7 +210,13 @@ const drawings = [
     year: "2022"
   },
   {
-    title: "Uma luz que abraça uma sombra nunca se perderá na escuridão (Alquímia das Almas)",
+    title: "Tinker Bell",
+    image: "img/tinker.jpeg",
+    category: "ilustracao",
+    year: "2026"
+  },
+  {
+    title: "Alquímia das Almas",
     image: "img/fav.jpeg",
     category: "ilustracao",
     year: "2023"
@@ -234,11 +258,11 @@ const drawings = [
     year: "2022"
   },
   {
-    title: "Jisoo (BLACKPINK)",
-    image: "img/jisoo.jpeg",
-    category: "realismo",
-    year: "2022"
-  }
+    title: "Aquarela",
+    image: "img/aquarela1.jpeg",
+    category: " ",
+    year: "2024"
+  },
 ];
 
 /* ELEMENTOS */
