@@ -9,6 +9,30 @@ const drawings = [
     title: "Lua Inferior Cinco e Muzan Kibutsuji",
     image: "img/demonslayer.jpeg",
     category: "anime",
+    year: "2024"
+  },
+  {
+    title: "  St. Paul's Cathedral - Londres, Inglaterra",
+    image: "img/catedral.jpeg",
+    category: "arquitetura",
+    year: "2026"
+  },
+  {
+    title: "El Pilar, Zaragoza - Espanha",
+    image: "img/arquiteturaazul.jpeg",
+    category: "arquitetura",
+    year: "2025"
+  },
+  {
+    title: "Zenitsu Fanart",
+    image: "img/zenitsu.jpeg",
+    category: "anime",
+    year: "2024"
+  },
+  {
+    title: "Amelie de Xsbel",
+    image: "img/amelie.jpeg",
+    category: "realismo",
     year: "2025"
   },
   {
@@ -24,33 +48,21 @@ const drawings = [
     year: "2025"
   },
   {
-    title: "I  will always choose you - Damon Salvatore",
-    image: "img/tvd.jpeg",
-    category: "ilustracao",
-    year: "2024"
-  },
-  {
     title: "Coliseu - Itália",
     image: "img/arquitetura2.jpeg",
     category: "arquitetura",
     year: "2024"
   },
   {
-    title: "El Pilar, Zaragoza - Espanha",
-    image: "img/arquiteturaazul.jpeg",
-    category: "arquitetura",
-    year: "2025"
-  },
-  {
-    title: "Amelie de Xsbel",
-    image: "img/amelie.jpeg",
-    category: "realismo",
+    title: "I  will always choose you - Damon Salvatore",
+    image: "img/tvd.jpeg",
+    category: "ilustracao",
     year: "2024"
   },
   {
     title: "Chama Viva",
     image: "img/capa.jpeg",
-    category: "realismo",
+    category: "anime",
     year: "2023"
   },
   {
@@ -60,17 +72,173 @@ const drawings = [
     year: "2022"
   },
   {
-    title: "Zenitsu Fanart",
-    image: "img/zenitsu.jpeg",
-    category: "realismo",
-    year: "2024"
-  },
-  {
     title: "Kimi no na wa Fanart",
     image: "img/yourname.jpeg",
     category: "anime",
     year: "2025"
   },
+  {
+    title: "Arquitetura de Veneza",
+    image: "img/veneza.jpeg",
+    category: "arquitetura",
+    year: "2024"
+  },
+  {
+    title: "Casa abandonada, céu vermelho",
+    image: "img/casaabandonada.jpeg",
+    category: "arquitetura",
+    year: "2025"
+  },
+  {
+    title: "Farol",
+    image: "img/farol.jpeg",
+    category: "arquitetura",
+    year: "2024"
+  },
+  {
+    title: "Attack on Titan fanart",
+    image: "img/attackontitan.jpeg",
+    category: "anime",
+    year: "2025"
+  },
+  {
+    title: "Goku e Gohan fanart",
+    image: "img/gokuegohan.jpeg",
+    category: "anime",
+    year: "2024"
+  },
+  {
+    title: "Mini Goku fanart",
+    image: "img/minigoku.jpeg",
+    category: "anime",
+    year: "2024"
+  },
+  {
+    title: "Akaza fanart",
+    image: "img/akaza.jpeg",
+    category: "anime",
+    year: "2025"
+  },
+  {
+    title: "Titanic, 14 de abril de 1912",
+    image: "img/titanic.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "Raposa em Aquarela",
+    image: "img/raposa.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "Anne with an E",
+    image: "img/anne.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Cameron Boyce",
+    image: "img/cameronboyce.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Serena",
+    image: "img/moça.jpeg",
+    category: "realismo",
+    year: "2024"
+  },
+  {
+    title: "Red Hot Chilli Cat",
+    image: "img/redhotcat.jpeg",
+    category: "ilustracao",
+    year: "2025"
+  },
+  {
+    title: "O menino, a toupeira, a raposa e o cavalo",
+    image: "img/meninoetoupeira.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "Jesus",
+    image: "img/jesus.jpeg",
+    category: "realismo",
+    year: "2025"
+  },
+  {
+    title: "Hinata Naruto fanart",
+    image: "img/hinatanaruto.jpeg",
+    category: "anime",
+    year: "2023"
+  },
+  {
+    title: "Tinker Bell",
+    image: "img/tinker.jpeg",
+    category: "ilustracao",
+    year: "2026"
+  },
+  {
+    title: "Hinata fanart",
+    image: "img/hinata.jpeg",
+    category: "anime",
+    year: "2022"
+  },
+  {
+    title: "Rapunzel e Flynn Rider",
+    image: "img/rapunzel.jpeg",
+    category: "ilustracao",
+    year: "2022"
+  },
+  {
+    title: "Uma luz que abraça uma sombra nunca se perderá na escuridão (Alquímia das Almas)",
+    image: "img/fav.jpeg",
+    category: "ilustracao",
+    year: "2023"
+  },
+  {
+    title: "A Caminho da Lua",
+    image: "img/feifei.jpeg",
+    category: "ilustracao",
+    year: "2022"
+  },
+  {
+    title: "Gato",
+    image: "img/gato.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "O Pássaro de Agosto",
+    image: "img/passaro.jpeg",
+    category: "ilustracao",
+    year: "2024"
+  },
+  {
+    title: "Alma livre",
+    image: "img/moçaborboleta.jpeg",
+    category: "realismo",
+    year: "2024"
+  },
+  {
+    title: "Chaves",
+    image: "img/chaves.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Jennie (BLACKPINK)",
+    image: "img/jennie.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Jisoo (BLACKPINK)",
+    image: "img/jisoo.jpeg",
+    category: "realismo",
+    year: "2022"
+  }
 ];
 
 /* ELEMENTOS */
