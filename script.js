@@ -96,8 +96,14 @@ const drawings = [
     year: "2024"
   },
   {
-    title: "Akaza fanart",
+    title: "Akaza fanart (Demon Slayer)",
     image: "img/akaza.jpeg",
+    category: "anime",
+    year: "2025"
+  },
+  {
+    title: "Iguro fanart (Demon Slayer)",
+    image: "img/iguro.jpeg",
     category: "anime",
     year: "2025"
   },
@@ -112,30 +118,6 @@ const drawings = [
     image: "img/mulhermaravilha.jpeg",
     category: "realismo",
     year: "2022"
-  },
-  {
-    title: "Farol",
-    image: "img/farol.jpeg",
-    category: "arquitetura",
-    year: "2024"
-  },
-  {
-    title: "Attack on Titan fanart",
-    image: "img/attackontitan.jpeg",
-    category: "anime",
-    year: "2025"
-  },
-  {
-    title: "Red Hot Chilli Cat",
-    image: "img/redhotcat.jpeg",
-    category: "ilustracao",
-    year: "2025"
-  },
-  {
-    title: "Titanic, 14 de abril de 1912",
-    image: "img/titanic.jpeg",
-    category: "ilustracao",
-    year: "2024"
   },
   {
     title: "Raposa em Aquarela",
@@ -166,6 +148,48 @@ const drawings = [
     image: "img/jesus.jpeg",
     category: "realismo",
     year: "2025"
+  },
+  {
+    title: "Farol",
+    image: "img/farol.jpeg",
+    category: "arquitetura",
+    year: "2024"
+  },
+  {
+    title: "Depois da última valsa",
+    image: "img/salao.jpeg",
+    category: "arquitetura",
+    year: "2024"
+  },
+  {
+    title: "Alquímia das Almas",
+    image: "img/fav.jpeg",
+    category: "ilustracao",
+    year: "2023"
+  },
+  {
+    title: "Attack on Titan fanart",
+    image: "img/attackontitan.jpeg",
+    category: "anime",
+    year: "2025"
+  },
+  {
+    title: "Red Hot Chilli Cat",
+    image: "img/redhotcat.jpeg",
+    category: "ilustracao",
+    year: "2025"
+  },
+  {
+    title: "Angra",
+    image: "img/angra.jpeg",
+    category: "Conchas e Promessas",
+    year: "2025"
+  },
+  {
+    title: "Titanic, 14 de abril de 1912",
+    image: "img/titanic.jpeg",
+    category: "ilustracao",
+    year: "2024"
   },
   {
     title: "O menino, a toupeira, a raposa e o cavalo",
@@ -216,12 +240,6 @@ const drawings = [
     year: "2026"
   },
   {
-    title: "Alquímia das Almas",
-    image: "img/fav.jpeg",
-    category: "ilustracao",
-    year: "2023"
-  },
-  {
     title: "A Caminho da Lua",
     image: "img/feifei.jpeg",
     category: "ilustracao",
@@ -258,9 +276,27 @@ const drawings = [
     year: "2022"
   },
   {
-    title: "Aquarela",
-    image: "img/aquarela1.jpeg",
-    category: " ",
+    title: "Pinheiros sob o Céu Estrelado",
+    image: "img/pinheiros.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Última luz",
+    image: "img/crepusculo.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Folhagem em Azul",
+    image: "img/folhas.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Espelho da Lua",
+    image: "img/mar.jpeg",
+    category: "aquarela",
     year: "2024"
   },
 ];
