@@ -102,8 +102,8 @@ const drawings = [
     year: "2025"
   },
   {
-    title: "Arquitetura de Veneza",
-    image: "img/veneza.jpeg",
+    title: "Catedral de Berlim - Alemanha",
+    image: "img/berlim.jpeg",
     category: "arquitetura",
     year: "2024"
   },
@@ -180,8 +180,8 @@ const drawings = [
     year: "2024"
   },
   {
-    title: "Depois da última valsa",
-    image: "img/salao.jpeg",
+    title: "Arquitetura de Veneza",
+    image: "img/veneza.jpeg",
     category: "arquitetura",
     year: "2024"
   },
