@@ -60,6 +60,30 @@ const drawings = [
     year: "2024"
   },
   {
+    title: "Pinheiros sob o Céu Estrelado",
+    image: "img/pinheiros.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Última luz",
+    image: "img/crepusculo.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Folhagem em Azul",
+    image: "img/folhas.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
+    title: "Espelho da Lua",
+    image: "img/mar.jpeg",
+    category: "aquarela",
+    year: "2024"
+  },
+  {
     title: "Chama Viva",
     image: "img/capa.jpeg",
     category: "anime",
@@ -274,30 +298,6 @@ const drawings = [
     image: "img/jennie.jpeg",
     category: "realismo",
     year: "2022"
-  },
-  {
-    title: "Pinheiros sob o Céu Estrelado",
-    image: "img/pinheiros.jpeg",
-    category: "aquarela",
-    year: "2024"
-  },
-  {
-    title: "Última luz",
-    image: "img/crepusculo.jpeg",
-    category: "aquarela",
-    year: "2024"
-  },
-  {
-    title: "Folhagem em Azul",
-    image: "img/folhas.jpeg",
-    category: "aquarela",
-    year: "2024"
-  },
-  {
-    title: "Espelho da Lua",
-    image: "img/mar.jpeg",
-    category: "aquarela",
-    year: "2024"
   },
 ];
 
