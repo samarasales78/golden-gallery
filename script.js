@@ -347,6 +347,20 @@ function applyFilters() {
 filterCategory.addEventListener("change", applyFilters);
 filterYear.addEventListener("change", applyFilters);
 
+/* SOBRE */ 
+const aboutSection = document.querySelector(".about"); 
+if (aboutSection) { 
+  const observer = new IntersectionObserver( 
+    ([entry]) => { 
+      if (entry.isIntersecting) { 
+        aboutSection.classList.add("show"); 
+      } 
+    }, 
+    { threshold: 0.3 } 
+  ); 
+  observer.observe(aboutSection); 
+} 
+
 /* INICIALIZAÇÃO (TODOS */
 document.addEventListener("DOMContentLoaded", () => {
   renderGallery(drawings);
