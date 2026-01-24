@@ -301,6 +301,16 @@ const drawings = [
   },
 ];
 
+const evolucaoDrawings = [
+  { image: "img/2019.jpeg", title: "2019" },
+  { image: "img/2020.jpeg", title: "2020" },
+  { image: "img/2021.jpeg", title: "2021" },
+  { image: "img/2022.jpeg", title: "2022" },
+  { image: "img/2023.jpeg", title: "2023" },
+  { image: "img/2024.jpeg", title: "2024" },
+  { image: "img/2025.jpeg", title: "2025" }
+];
+
 /* ELEMENTOS */
 const gallery = document.getElementById("gallery");
 const filterCategory = document.getElementById("filterCategory");
@@ -328,11 +338,17 @@ function renderGallery(items) {
   });
 }
 
-/* APLICAR FILTROS */
 function applyFilters() {
   const category = filterCategory.value;
   const year = filterYear.value;
 
+  // EVOLUÇÃO
+  if (category === "evolucao") {
+    renderGallery(evolucaoDrawings);
+    return;
+  }
+
+  // GALERIA NORMAL
   const filteredDrawings = drawings.filter(item => {
     return (
       (category === "all" || item.category === category) &&
@@ -347,19 +363,19 @@ function applyFilters() {
 filterCategory.addEventListener("change", applyFilters);
 filterYear.addEventListener("change", applyFilters);
 
-/* SOBRE */ 
-const aboutSection = document.querySelector(".about"); 
-if (aboutSection) { 
-  const observer = new IntersectionObserver( 
-    ([entry]) => { 
-      if (entry.isIntersecting) { 
-        aboutSection.classList.add("show"); 
-      } 
-    }, 
-    { threshold: 0.3 } 
-  ); 
-  observer.observe(aboutSection); 
-} 
+/* SOBRE */
+const aboutSection = document.querySelector(".about");
+if (aboutSection) {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        aboutSection.classList.add("show");
+      }
+    },
+    { threshold: 0.3 }
+  );
+  observer.observe(aboutSection);
+}
 
 /* INICIALIZAÇÃO (TODOS */
 document.addEventListener("DOMContentLoaded", () => {
