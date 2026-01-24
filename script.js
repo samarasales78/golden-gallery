@@ -363,6 +363,11 @@ function applyFilters() {
 filterCategory.addEventListener("change", applyFilters);
 filterYear.addEventListener("change", applyFilters);
 
+/* INICIALIZAÇÃO (TODOS */
+document.addEventListener("DOMContentLoaded", () => {
+  renderGallery(drawings);
+});
+
 /* SOBRE */
 const aboutSection = document.querySelector(".about");
 if (aboutSection) {
@@ -377,7 +382,18 @@ if (aboutSection) {
   observer.observe(aboutSection);
 }
 
-/* INICIALIZAÇÃO (TODOS */
-document.addEventListener("DOMContentLoaded", () => {
-  renderGallery(drawings);
-});
+/* CONTATO */
+const contatoElements = document.querySelectorAll(".footer, .creditos");
+
+const contatoObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+contatoElements.forEach(el => contatoObserver.observe(el));
