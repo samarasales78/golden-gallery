@@ -11,7 +11,18 @@
 
 <body>
 
-  <section class="hero">
+  <header class="header">
+    <section>
+      <nav class="navbar">
+        <a href="#home" class="home">HOME</a>
+        <a href="#desenhos" id="link-desenhos">DESENHOS</a>
+        <a href="#sobre">SOBRE</a>
+        <a href="#contato">CONTATO</a>
+      </nav>
+    </section>
+  </header>
+
+  <section id="home" class="hero">
     <div class="hero-wrapper">
 
       <div class="hero-content">
@@ -28,7 +39,7 @@
     </div>
   </section>
 
-  <section class="explore-categories">
+  <section id="desenhos" class="explore-categories">
     <span class="explore-top">GALLERY</span>
     <h2 class="explore-title">Explore por categorias</h2>
   </section>
@@ -55,6 +66,38 @@
   </div>
 
   <div class="gallery-grid" id="gallery"></div>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="about">
+    <div class="about-frame">
+
+      <div class="about-text">
+        <span class="about-subtitle">SOBRE</span>
+
+        <h2>
+          Arte como<br>
+          expressão silenciosa
+        </h2>
+
+        <p>
+          Este espaço é um diário visual. Aqui reúno meus desenhos favoritos, entre realismo, anime e arquitetura.
+          Percebam que as cores predominantes nos desenhos (branco, preto e vermelho) ressoam no design do site.
+          A forma como entendo o desenho se aproxima do que
+          Oscar Wilde expressa em <em>O Retrato de Dorian Gray</em>:
+        </p>
+
+        <p>
+          “Every portrait that is painted with feeling is a portrait of the artist, not of the sitter.”
+          (WILDE, 1891).
+        </p>
+
+        <p>
+          Trad.: Todo retrato pintado com sentimento é um retrato não do modelo, mas do artista.
+        </p>
+
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

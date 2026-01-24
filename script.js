@@ -21,7 +21,7 @@ const drawings = [
     title: "El Pilar, Zaragoza - Espanha",
     image: "img/arquiteturaazul.jpeg",
     category: "arquitetura",
-    year: "2025"
+    year: "2024"
   },
   {
     title: "Zenitsu Fanart",
