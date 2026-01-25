@@ -72,6 +72,18 @@ const drawings = [
     year: "2024"
   },
   {
+    title: "Cosmos",
+    image: "img/cosmos.jpeg",
+    category: "aquarela",
+    year: "2026"
+  },
+  {
+    title: "Refúgio",
+    image: "img/refugio.jpeg",
+    category: "aquarela",
+    year: "2026"
+  },
+  {
     title: "Folhagem em Azul",
     image: "img/folhas.jpeg",
     category: "aquarela",
