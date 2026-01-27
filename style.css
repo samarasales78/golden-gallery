@@ -365,6 +365,83 @@ body {
   text-transform: uppercase;
 }
 
+/* EXPANDIR */ 
+.drawing-image-wrapper {
+  position: relative;
+}
+
+.expand-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.drawing-card:hover .expand-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.expand-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+
+  z-index: 999;
+}
+
+.image-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* SOBRE */
 .about {
   display: flex;

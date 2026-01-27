@@ -333,7 +333,7 @@ const filterYear = document.getElementById("filterYear");
   return array.sort(() => Math.random() - 0.5);
 } */
 
-/* RENDERIZAR GALERIA */
+/* GALERIA E BOTÃO DE EXPANSÃO */
 function renderGallery(items) {
   gallery.innerHTML = "";
 
@@ -342,14 +342,53 @@ function renderGallery(items) {
     card.classList.add("drawing-card");
 
     card.innerHTML = `
-      <div class="drawing-image" style="background-image: url('${item.image}')"></div>
-      <span class="drawing-caption">${item.title}</span>
-    `;
+        <div class="drawing-image-wrapper">
+          <div 
+            class="drawing-image" 
+            style="background-image: url('${item.image}')"
+          ></div>
+  
+          <button 
+            class="expand-btn" 
+            aria-label="Expandir desenho"
+            data-image="${item.image}"
+            data-title="${item.title || ""}"
+          >
+            ⤢
+          </button>
+        </div>
+  
+        <span class="drawing-caption">${item.title || ""}</span>
+      `;
 
     gallery.appendChild(card);
   });
 }
 
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const closeModal = document.querySelector(".close-modal");
+
+document.addEventListener("click", e => {
+  const btn = e.target.closest(".expand-btn");
+  if (!btn) return;
+
+  modalImg.src = btn.dataset.image;
+  modalImg.alt = btn.dataset.title;
+  modal.classList.add("active");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+modal.addEventListener("click", e => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
+
+/* FILTROS */
 function applyFilters() {
   const category = filterCategory.value;
   const year = filterYear.value;
