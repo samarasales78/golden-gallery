@@ -394,6 +394,9 @@ body {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 0.3s ease, transform 0.3s ease;
+
+  line-height: 1;
+  padding-bottom: 1px;
 }
 
 .drawing-card:hover .expand-btn {
