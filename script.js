@@ -120,9 +120,9 @@ const drawings = [
     year: "2024"
   },
   {
-    title: "Casa abandonada, céu vermelho",
-    image: "img/casaabandonada.jpeg",
-    category: "arquitetura",
+    title: "Goku e Shenlong fanart",
+    image: "img/shenlong.jpeg",
+    category: "anime",
     year: "2025"
   },
   {
@@ -160,6 +160,12 @@ const drawings = [
     image: "img/raposa.jpeg",
     category: "ilustracao",
     year: "2024"
+  },
+  {
+    title: "Casa abandonada, céu vermelho",
+    image: "img/casaabandonada.jpeg",
+    category: "arquitetura",
+    year: "2025"
   },
   {
     title: "Anne with an E",
