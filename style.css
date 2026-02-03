@@ -14,6 +14,10 @@ body {
   background-color: var(--preto);
 }
 
+* {
+  cursor: url("img/icons8-cursor-32.png") 0 0, auto;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
