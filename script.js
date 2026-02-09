@@ -168,6 +168,12 @@ const drawings = [
     year: "2025"
   },
   {
+    title: "'And it had all what art should be, unconscious, ideal and remote - Oscar Wilde'",
+    image: "img/esculturas.jpeg",
+    category: "realismo",
+    year: "2026"
+  },
+  {
     title: "Serena",
     image: "img/moça.jpeg",
     category: "realismo",
