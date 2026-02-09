@@ -150,6 +150,30 @@ const drawings = [
     year: "2024"
   },
   {
+    title: "Anne with an E",
+    image: "img/anne.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Cameron Boyce",
+    image: "img/cameronboyce.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Jesus",
+    image: "img/jesus.jpeg",
+    category: "realismo",
+    year: "2025"
+  },
+  {
+    title: "Serena",
+    image: "img/moça.jpeg",
+    category: "realismo",
+    year: "2024"
+  },
+  {
     title: "Mulher Maravilha",
     image: "img/mulhermaravilha.jpeg",
     category: "realismo",
@@ -165,30 +189,6 @@ const drawings = [
     title: "Casa abandonada, céu vermelho",
     image: "img/casaabandonada.jpeg",
     category: "arquitetura",
-    year: "2025"
-  },
-  {
-    title: "Anne with an E",
-    image: "img/anne.jpeg",
-    category: "realismo",
-    year: "2022"
-  },
-  {
-    title: "Cameron Boyce",
-    image: "img/cameronboyce.jpeg",
-    category: "realismo",
-    year: "2022"
-  },
-  {
-    title: "Serena",
-    image: "img/moça.jpeg",
-    category: "realismo",
-    year: "2024"
-  },
-  {
-    title: "Jesus",
-    image: "img/jesus.jpeg",
-    category: "realismo",
     year: "2025"
   },
   {
