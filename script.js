@@ -102,22 +102,22 @@ const drawings = [
     year: "2023"
   },
   {
-    title: "Criança com capuz",
-    image: "img/baby.jpeg",
-    category: "realismo",
-    year: "2022"
-  },
-  {
-    title: "Kimi no na wa Fanart",
-    image: "img/yourname.jpeg",
-    category: "anime",
-    year: "2025"
+    title: "Whatever our souls are made of, his and mine are the same.",
+    image: "img/wuthering.jpeg",
+    category: "ilustracao",
+    year: "2026"
   },
   {
     title: "Catedral de Berlim - Alemanha",
     image: "img/berlim.jpeg",
     category: "arquitetura",
     year: "2024"
+  },
+  {
+    title: "Kimi no na wa Fanart",
+    image: "img/yourname.jpeg",
+    category: "anime",
+    year: "2025"
   },
   {
     title: "Goku e Shenlong fanart",
@@ -150,6 +150,12 @@ const drawings = [
     year: "2024"
   },
   {
+    title: "Criança com capuz",
+    image: "img/baby.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
     title: "Anne with an E",
     image: "img/anne.jpeg",
     category: "realismo",
@@ -168,7 +174,7 @@ const drawings = [
     year: "2025"
   },
   {
-    title: "'And it had all what art should be, unconscious, ideal and remote - Oscar Wilde'",
+    title: "'And it had all what art should be, unconscious, ideal and remote'",
     image: "img/esculturas.jpeg",
     category: "realismo",
     year: "2026"
