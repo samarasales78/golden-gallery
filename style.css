@@ -455,8 +455,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 3rem 1.4rem;
-  margin-top: 6.8rem; /* desce */
+  margin-top: 6.8rem;
   position: relative;
+
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -467,7 +468,6 @@ body {
   transform: translateY(0);
 }
 
-/* FRAME */
 .about-frame {
   position: relative;
   width: 100%;
@@ -475,6 +475,11 @@ body {
   padding: 2.6rem 2.8rem;
   border-radius: 20px;
   border: 1px solid rgba(212, 175, 55, 0.18);
+
+  /* layout lateral */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* brilho */
@@ -483,18 +488,18 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 10px;
-  background: radial-gradient(circle at top left,
-      rgba(212, 175, 55, 0.10),
-      transparent 30%);
+  background: radial-gradient(
+    circle at top left,
+    rgba(212, 175, 55, 0.10),
+    transparent 30%
+  );
   pointer-events: none;
 }
 
-/* TEXTO */
 .about-text {
-  max-width: 500px;
+  max-width: 60%; 
 }
 
-/* subtítulo */
 .about-subtitle {
   font-size: 0.75rem;
   letter-spacing: 0.28rem;
@@ -503,7 +508,6 @@ body {
   opacity: 0.75;
 }
 
-/* título */
 .about-text h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.6rem;
@@ -513,7 +517,6 @@ body {
   color: var(--dourado);
 }
 
-/* parágrafos */
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.7;
@@ -521,7 +524,19 @@ body {
   margin-bottom: 1.2rem;
 }
 
-/* linha vertical */
+.about-image {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image img {
+  width: 100%;     
+  max-width: 300px;
+  height: auto;
+}
+
+/*LINHA VERTICAL*/
 .about::before {
   content: "";
   position: absolute;
@@ -529,10 +544,12 @@ body {
   top: 26%;
   bottom: 26%;
   width: 1px;
-  background: linear-gradient(to bottom,
-      transparent,
-      rgba(212, 175, 55, 0.25),
-      transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(212, 175, 55, 0.25),
+    transparent
+  );
 }
 
 /*  CONTATO */
@@ -702,6 +719,10 @@ body {
   .about-text p:last-child {
     margin-bottom: 0;
   }
+
+  .about-image {
+    display: none;
+  }  
 
   .footer {
     padding: 3rem 0 1.5rem; 
