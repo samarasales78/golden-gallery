@@ -222,6 +222,18 @@ const drawings = [
     year: "2023"
   },
   {
+    title: "Jisoo (BLACKPINK)",
+    image: "img/jisoo.jpeg",
+    category: "realismo",
+    year: "2022"
+  },
+  {
+    title: "Lord I'm 500 miles from my home",
+    image: "img/eren.jpeg",
+    category: "anime",
+    year: "2026"
+  },
+  {
     title: "Attack on Titan fanart",
     image: "img/attackontitan.jpeg",
     category: "anime",
@@ -262,12 +274,6 @@ const drawings = [
     image: "img/ironman.jpeg",
     category: "ilustracao",
     year: "2024"
-  },
-  {
-    title: "Jisoo (BLACKPINK)",
-    image: "img/jisoo.jpeg",
-    category: "realismo",
-    year: "2022"
   },
   {
     title: "Hinata Naruto fanart",
